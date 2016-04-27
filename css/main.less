@@ -4,37 +4,36 @@ header {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 
-
   .height {
     padding: 40px 0;
   }
 
-    .content {
-      background: @blue;
-      padding: 10px;
+  .content {
+    background: @blue;
+    padding: 10px;
+    height: 100%;
+
+    .container-fluid {
       height: 100%;
-
-      .container-fluid {
-        height: 100%;
-      }
-
-      .row {
-        height: 50%;
-      }
-
-      .content_age,
-      .content_contacts {
-        display: inline-block;
-      }
-
-      .content_age {
-        //padding-right: 400px;
-      }
-
-      .content_contacts {
-        //padding-right: 70px;
-      }
     }
+
+    .row {
+      height: 50%;
+    }
+
+    .content_age,
+    .content_contacts {
+      display: inline-block;
+    }
+
+    .content_age {
+      //padding-right: 400px;
+    }
+
+    .content_contacts {
+      //padding-right: 70px;
+    }
+  }
 }
 
 .table {
@@ -50,17 +49,19 @@ header {
 }
 
 .renge {
-
   font-size: 15px;
 
-  .renge_content {
+  .item {
     position: relative;
-    //padding: 0;
     height: 560px;
     overflow: hidden;
+
+    img {
+      width: 100%;
+    }
   }
 
-  .renge_content_descr {
+  .item_descr {
     width: 100%;
     background: white;
     position: absolute;
@@ -68,23 +69,20 @@ header {
     padding-bottom: 30px;
   }
 
-  .renge_content_item {
+  .item_descr_firma {
+    font-style: italic;
+    color: #B6B6B6;
+  }
+
+  .item_descr_name {
     letter-spacing: 1px;
     text-transform: uppercase;
     font-weight: bold;
   }
 
-  .renge_content_price {
+  .item_descr_price {
     font-weight: bold;
     color: #B6B6B6;
   }
 
-  img {
-    width: 100%;
-  }
-
-  .renge_content_firma {
-    font-style: italic;
-    color: #B6B6B6;;
-  }
 }
