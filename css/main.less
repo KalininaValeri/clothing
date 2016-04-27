@@ -49,23 +49,32 @@ header {
 }
 
 .renge {
+  background: @blue;
   font-size: 15px;
+
+  .renge_content {
+    background: white;
+  }
 
   .item {
     position: relative;
-    height: 560px;
+    height: 480px;
     overflow: hidden;
+    background: white;
+    padding: 0;
 
     img {
       width: 100%;
     }
   }
 
+
   .item_descr {
     width: 100%;
     background: white;
     position: absolute;
     bottom: 0;
+    padding: 10px;
     padding-bottom: 30px;
   }
 
@@ -83,6 +92,21 @@ header {
   .item_descr_price {
     font-weight: bold;
     color: #B6B6B6;
+  }
+
+  .item_disc {
+    text-align: center;
+    padding: 2px;
+    width: 100%;
+    background: @pink;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+  }
+
+  .renge_sidebar {
+    background: @blue;
+    //border: 10px solid @blue;
   }
 
 }
