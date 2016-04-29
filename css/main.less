@@ -12,9 +12,6 @@
 
 header {
   background: @ablue;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
 
   .height {
     padding: 40px 0;
@@ -60,12 +57,9 @@ header {
     overflow: hidden;
     background: white;
     padding: 40px 20px 45px;
-    border: 1px dotted #f0f0f0;;
+    border: 1px dotted #f0f0f0;
     height: 550px;
     text-align: center;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
 
     img {
       max-width: 100%;
@@ -96,7 +90,21 @@ header {
     padding-bottom: 30px;
   }
 
-  .item_disc {
+
+
+  .renge_sidebar {
+    background: @blue;
+    position: relative;
+
+    .item {
+      border-bottom: 0px dotted #f0f0f0;
+    }
+  }
+
+  .renge_sidebar_desc {
+    position: absolute;
+    top: 0;
+    left: 0;
     text-align: center;
     padding: 2px;
     width: 100%;
@@ -105,12 +113,6 @@ header {
     font-weight: bold;
     color: white;
     margin: 0;
-  }
-
-  .renge_sidebar {
-    background: @blue;
-
-    //border: 10px solid @blue;
   }
 }
 
