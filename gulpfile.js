@@ -6,8 +6,8 @@ var less = require('gulp-less');
 var uglifycss = require('gulp-uglifycss');
 
 var allJs = [
-    'js/vendor/jquery-2.2.3.js',
-    'js/main.js'
+    'src/js/vendor/jquery-2.2.3.js',
+    'src/js/main.js'
 ]
 
 gulp.task('minify', function(){
@@ -19,10 +19,16 @@ gulp.task('minify', function(){
 });
 
 gulp.task('less', function () {
-    return gulp.src('./css/style.less')
+    return gulp.src('./src/css/style.less')
         .pipe(less())
         .pipe(uglifycss())
         .pipe(gulp.dest('./dist'));
 });
 
-gulp.task('default', ['less', 'minify']);
+gulp.task('default', function() {
+    gulp.run('minify', 'less');
+
+    gulp.watch('src/**', function(event) {
+        gulp.run('minify', 'less');
+    })
+});
