@@ -1,3 +1,15 @@
+.table {
+  display: table;
+  height: 100%;
+
+  .table_cell {
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+    text-align: center;
+  }
+}
+
 header {
   background: @ablue;
   -webkit-box-sizing: border-box;
@@ -27,24 +39,10 @@ header {
     }
 
     .content_age {
-      //padding-right: 400px;
     }
 
     .content_contacts {
-      //padding-right: 70px;
     }
-  }
-}
-
-.table {
-  display: table;
-  height: 100%;
-
-  .table_cell {
-    display: table-cell;
-    height: 100%;
-    vertical-align: bottom;
-    text-align: right;
   }
 }
 
@@ -54,44 +52,48 @@ header {
 
   .renge_content {
     background: white;
+    padding: 0;
   }
 
   .item {
     position: relative;
-    height: 560px;
     overflow: hidden;
     background: white;
-    padding: 0;
+    padding: 40px 20px 45px;
+    border: 1px dotted #f0f0f0;;
+    height: 550px;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 
     img {
-      width: 90%;
+      max-width: 100%;
     }
   }
 
+  .item_name {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0;
+  }
 
-  .item_descr {
+  .item_price {
+    font-weight: bold;
+    color: #B6B6B6;
+  }
+
+  .item_firma {
+    font-style: italic;
+    color: #B6B6B6;
     width: 100%;
     background: white;
     position: absolute;
     bottom: 0;
+    left: 0;
     padding: 10px;
     padding-bottom: 30px;
-  }
-
-  .item_descr_firma {
-    font-style: italic;
-    color: #B6B6B6;
-  }
-
-  .item_descr_name {
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    font-weight: bold;
-  }
-
-  .item_descr_price {
-    font-weight: bold;
-    color: #B6B6B6;
   }
 
   .item_disc {
@@ -102,6 +104,7 @@ header {
     font-size: 50px;
     font-weight: bold;
     color: white;
+    margin: 0;
   }
 
   .renge_sidebar {
@@ -109,7 +112,6 @@ header {
 
     //border: 10px solid @blue;
   }
-
 }
 
 .contacts {
