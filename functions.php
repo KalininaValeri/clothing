@@ -70,20 +70,18 @@ if ( function_exists('register_sidebar') ) {
 	
     register_sidebar(array(
 		'name' => 'Правый сайдбар',
-		'before_widget' => '<div class="widget">',
-        'before_title' => '<h2 class="sidebar-header">',
-        'after_title' => '</h2><div class="text">',
-        'after_widget' => '</div></div><hr />'
-	));
-	
-	register_sidebar(array(
-		'name' => 'Сайдбар в футере',
-		'before_widget' => '<div class="footer-widget">',
-        'before_title' => '<h2>',
-        'after_title' => '</h2><div class="text">',
+		'before_widget' => '<div class="col-xs-12 item">',
+        'before_title' => '<h4 class="renge_sidebar_desc">',
+        'after_title' => '</h4>
+        <div class="table">
+            <div class="table_cell">
+                <img src="http://localhost/wp-content/themes/clothes/img/Bambuk.png">
+            </div>
+        </div>
+        <div class="item_firma">',
         'after_widget' => '</div></div>'
 	));
-	
+
 }
 
 
