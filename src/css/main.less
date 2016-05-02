@@ -11,35 +11,27 @@
 }
 
 header {
-  background: @ablue;
+  background:url(../img/bg2.png);
 
   .height {
-    padding: 40px 0;
+    padding: 80px 0;
+
   }
 
   .content {
-    background: @blue;
+    background: url("../img/bg.png");
     padding: 10px;
     height: 100%;
 
-    .container-fluid {
-      height: 100%;
+    h1 {
+      font-size: 0;
+      margin: 0;
     }
 
-    .row {
-      height: 50%;
+    img {
+      width: 100%;
     }
 
-    .content_age,
-    .content_contacts {
-      display: inline-block;
-    }
-
-    .content_age {
-    }
-
-    .content_contacts {
-    }
   }
 }
 
@@ -97,7 +89,7 @@ header {
     position: relative;
 
     .item {
-      border-bottom: 0px dotted #f0f0f0;
+      border-bottom: 0 dotted #f0f0f0;
     }
   }
 
@@ -118,22 +110,28 @@ header {
 
 .contacts {
 
-  background: url(../img/fon.png);
+  background: url(../img/bg.png);
 
   .fon {
-    background: rgba(165, 195, 255, 0.85);
+    //background: rgba(165, 195, 255, 0.85);
   }
 
   .contacts_data {
     padding: 5% 8% 0 32%;
-    color: white;
+    color: #151515;
+    opacity: 0.6;
+
+    h4,
+    span {
+      //background: @ablue;
+      //opacity: 0.4;
+    }
 
     h4 {
       margin: 0;
       padding: 10px;
       font-size: 24px;
       letter-spacing: -1px;
-      background: rgba(165, 195, 255, 0.5);
     }
 
     span {
@@ -141,7 +139,6 @@ header {
       font-size: 15px;
       padding-left: 10px;
       padding-bottom: 26px;
-      background: rgba(165, 195, 255, 0.5);
       width: 100%;
     }
   }
