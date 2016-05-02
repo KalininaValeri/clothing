@@ -10,7 +10,7 @@
                         <h4>Рабочее время</h4>
                         <span><b>Ежеденевно:</b> 10.00 - 20.00</span>
                         <h4>Способы оплаты</h4>
-                        <span>Наличны расчет, Visa, MasterCard</span>
+                        <span>Наличный расчет, Visa, MasterCard</span>
                     </div>
 
                 </div>
@@ -32,7 +32,7 @@
     </div>
 </footer>
 
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&a.."></script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 <script src="http://localhost/wp-content/themes/clothes/dist/all.js"></script>
 </body>
 </html>

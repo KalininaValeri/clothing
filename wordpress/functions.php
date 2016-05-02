@@ -72,13 +72,7 @@ if ( function_exists('register_sidebar') ) {
 		'name' => 'Правый сайдбар',
 		'before_widget' => '<div class="col-xs-12 item">',
         'before_title' => '<h4 class="renge_sidebar_desc">',
-        'after_title' => '</h4>
-        <div class="table">
-            <div class="table_cell">
-                <img src="http://localhost/wp-content/themes/clothes/img/Bambuk.png">
-            </div>
-        </div>
-        <div class="item_firma">',
+        'after_title' => '</h4><div class="item_firma">',
         'after_widget' => '</div></div>'
 	));
 
