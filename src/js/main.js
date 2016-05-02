@@ -12,14 +12,16 @@ var myMap,
 
 function init(){
     myMap = new ymaps.Map("map", {
-        center: [55.76, 37.64],
-        zoom: 7
+        center: [54.981236780152074,82.91233549999997],
+        zoom: 16
     });
 
-    myPlacemark = new ymaps.Placemark([55.76, 37.64], {
-        hintContent: 'Москва!',
-        balloonContent: 'Столица России'
+    myPlacemark = new ymaps.Placemark([54.981236780152074,82.91233549999997], {
+        hintContent: 'Детская одежда',
+        balloonContent: 'Кислород'
     });
+
+    myMap.behaviors.disable('scrollZoom');
 
     myMap.geoObjects.add(myPlacemark);
 }
