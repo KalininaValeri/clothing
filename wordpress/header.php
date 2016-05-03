@@ -6,6 +6,7 @@
     <title>Детская одежда</title>
     <link href="http://localhost/wp-content/themes/clothes/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="http://localhost/wp-content/themes/clothes/dist/style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="http://localhost/wp-content/themes/clothes/img/favicon.ico" type="image/x-icon">
 </head>
 <body>
 <header>
@@ -13,7 +14,8 @@
         <div class="content">
             <div class="table">
                 <div class="table_cell">
-                    <h1>ООО Кислород</h1>
+                    <h1>Детская одежда Новосибирска<br>
+                        ООО "Кислород"</h1>
                     <img src="http://localhost/wp-content/themes/clothes/img/dress1.png">
                 </div>
             </div>
