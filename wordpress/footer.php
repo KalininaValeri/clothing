@@ -27,7 +27,7 @@
     <div class="container-fluid">
         <div class="col-sm-6"></div>
         <div class="col-sm-6">
-            Сделано Калининой Валерией
+            Сделано <a href="http://kalininavaleri.github.io/my_site/" target="_blank">Калининой Валерией</a>
         </div>
     </div>
 </footer>
